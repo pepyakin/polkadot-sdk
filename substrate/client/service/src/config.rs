@@ -241,6 +241,7 @@ impl Configuration {
 			state_pruning: self.state_pruning.clone(),
 			source: self.database.clone(),
 			blocks_pruning: self.blocks_pruning,
+			changes_log: Some(self.data_path.join("changes_log")),
 		}
 	}
 }
